@@ -101,12 +101,14 @@ width: 100%;
   gap: 15px;
   margin-top: 20px;
   width: 100%;
+  
 }
 .product-card{
  cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
  color: #324d67;
+ 
 
 }
 .product-card:hover{
@@ -117,6 +119,7 @@ width: 100%;
  background-color: #ebebeb;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+  box-shadow: 1px 1px 8px 1px #888888;
 }
 
 .product-name{
