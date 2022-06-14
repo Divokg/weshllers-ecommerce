@@ -164,6 +164,7 @@ width: 100%;
 .hero-banner-container button{
    border-radius: 15px;
   padding: 10px 16px;
+  box-shadow: 1px 1px 5px 1px #868686;
   background-color: #f02d34;
   color: white;
   border: none;
@@ -172,6 +173,13 @@ width: 100%;
   font-weight: 500;
   cursor: pointer;
   z-index:10000 !important;
+}
+
+.hero-banner-container button:hover{
+  
+  background-color: #ff4400;
+  transition: transform 0.5s ease;
+  
 }
 
 .hero-banner-container h3{
@@ -428,7 +436,7 @@ padding: 30px 65px;
   margin-top: 40px;
   text-transform: uppercase;
   background-color: #f02d34;
-  color: #fff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
     transform: scale(1, 1);
   transition: transform 0.5s ease;
