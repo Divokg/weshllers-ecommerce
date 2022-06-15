@@ -18,6 +18,7 @@ const Product = ({product:{image,name,slug,price,discount}}) => {
             
 
         </div>
+        
       </Link>
     </div>
   )

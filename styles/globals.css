@@ -453,6 +453,7 @@ padding: 30px 65px;
 
 }
 
+
 .product-detail-image{
   border-radius: 15px;
    background-color: #ebebeb;
@@ -521,6 +522,8 @@ padding: 30px 65px;
   gap: 30px;
 }
 .buttons .add-to-cart{
+  border-radius: 8px;
+  box-shadow: 1px 4px 5px #d3d3d3;
   padding: 10px 20px;
   border: 1px solid #f02d34 ;
   margin-top: 40px;
@@ -538,7 +541,8 @@ padding: 30px 65px;
 }
 .buttons .buy-now{
   width: 200px;
-
+  border-radius: 8px;
+  box-shadow: 1px 4px 5px #d3d3d3;
   padding: 10px 20px;
   background-color: #f02d34;
   color: white;
@@ -554,8 +558,9 @@ padding: 30px 65px;
   transform:scale(1.1,1.1)
 }
 .quantity-desc{
+  border-radius: 8px;
   border: 1px solid gray;
-padding: 6px;
+  padding: 6px;
 }
 .quantity-desc span{
   font-size: 16px;
@@ -563,10 +568,10 @@ padding: 6px;
   cursor: pointer;
 }
 .quantity-desc .minus{
-  border-right: 1px solid gray;
   color: #f02d34;
 }
 .quantity-desc .num{
+  border-left: 1px solid gray;
   border-right: 1px solid gray;
   font-size: 20px;
 }
