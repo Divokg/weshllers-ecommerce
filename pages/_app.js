@@ -1,12 +1,18 @@
 import '../styles/globals.css'
 import React from 'react'
-import { Layout } from '../components'
+import { Layout } from '../components';
+import { StateContext } from '../context/StateContext';
+import { Toaster } from 'react-hot-toast';
 
 function MyApp({ Component, pageProps }) {
   return (
-  <Layout>
+    <StateContext>
+        <Layout>
+          <Toaster/>
       <Component {...pageProps} />
   </Layout>
+    </StateContext>
+  
   )
 }
 

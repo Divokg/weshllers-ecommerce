@@ -19,7 +19,7 @@ a {
 .main-container{
 max-width: 1400px; 
 margin: auto;
-width: 100%;
+width: 95%;
 
 }
 .layout{
@@ -42,7 +42,7 @@ width: 100%;
   position: relative;
   height: 400px;
   width: 100%;
-  overflow-x: hidden;
+  
 }
 
 .track {
@@ -77,6 +77,25 @@ width: 100%;
   transition: transform .4s ease;
   border: none;
   background-color: transparent;
+}
+.circle {
+  background: transparent;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #0000001a;
+}
+
+.pulse{
+  animation: pulse-animation 2s infinite;
+}
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
 }
 .cart-icon:hover{
   transform: scale(1.1,1.1);
@@ -436,7 +455,7 @@ padding: 30px 65px;
   margin-top: 40px;
   text-transform: uppercase;
   background-color: #f02d34;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   cursor: pointer;
     transform: scale(1, 1);
   transition: transform 0.5s ease;
