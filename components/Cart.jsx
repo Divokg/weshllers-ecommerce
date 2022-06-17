@@ -10,7 +10,7 @@ import { urlFor } from '../lib/client';
 const Cart = () => {
 
   const cartRef = useRef();
-  const {totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity,onRemove} = useStateContext();
+  const {totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity,onRemove,Mpesa} = useStateContext();
   return (
     <div className='cart-wrapper' ref={cartRef}>
       <div className='cart-container'>
@@ -75,7 +75,7 @@ const Cart = () => {
               <h3>KSh {totalPrice}</h3>
             </div>
             <div className='btn-container'>
-              <button type='button' className='btn' onClick="">Pay with MPesa</button>
+              <button type='button' className='btn' onClick= {() => Mpesa()}>Pay with MPesa</button>
 
             </div>
           </div>
